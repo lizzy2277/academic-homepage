@@ -23,7 +23,7 @@ export default function HeroBanner() {
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/images/book4.jpg)',
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/book4.jpg)`,
           filter: 'brightness(0.75)',
         }}
       />
@@ -51,7 +51,7 @@ export default function HeroBanner() {
           {/* Avatar */}
           <div className="shrink-0">
             <img
-              src="/images/avatar.jpg"
+              src={`${import.meta.env.BASE_URL}images/avatar.jpg`}
               alt="刘欢"
               className="w-28 h-28 rounded-full object-cover border-3 border-white shadow-md"
               style={{ borderWidth: '3px' }}
